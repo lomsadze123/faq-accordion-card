@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+p {
+    font-weight: 400;
+}
+
+.main {
+    background-color: white;
+    padding: 0 2.4rem 4.8rem 2.4rem;
+    border-radius: 2.3rem;
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+    margin-top: 12.5rem;
+    min-width: 32.6rem;
+    max-width: 52.7rem;
+}
+
+.hide {
+    display: none;
+    margin-top: 1.3rem;
+    font-size: 1.2rem;
+    color: #787887;
+    max-width: 32rem;
+    padding-right: 3.6rem;
+}
+
+.lists {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.picture {
+    margin-top: -10.8rem;
+    text-align: center;
+}
+
+.orangebox , .desktop {
+    display: none;
+}
+
+.withcube {
+    width: 23.685rem;
+}
+
+.shadow {
+    display: inline-block;
+    margin-top: -7.5rem;
+    width: 24rem;
+    height: auto;
+}
+
+h1 {
+    color: #1E1F36;
+    text-align: center;
+    margin: 2.8rem 0 4rem 0;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 3.969rem;
+}
+
+.show {
+    color: #4B4C5F;
+    font-size: 1.3rem;
+    line-height: 1.612rem;
+}
+
+.hr {
+    border: none;
+    height: .1rem;
+    background-color: #E8E8EA;
+    margin-top: 1.8rem;
+}
+
+.lists:not(:first-of-type) {
+    margin-top: 1.9rem;
+}
+
+
+@media (min-width: 1100px) {
+    .shadow {
+        display: none;
+    }
+    .main {
+        display: flex;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        padding: 6.5rem 9.5rem 8.3rem 0;
+        gap: 8.716rem;
+        margin: 0;
+    }
+    .picture {
+        margin: 0 0 0 -7.5rem;
+    }
+    .withcube {
+        width: 47.169rem;
+    }
+    .desktop {
+        display: inline;
+        width: 96.4rem;
+        position: absolute;
+        margin-top: -35rem;
+        left: -57rem;
+    }
+    h1 {
+        text-align: left;
+        margin: 0 0 4.5rem 0;
+    }
+    .show {
+        font-size: 1.4rem;
+        line-height: 1.736rem;
+    }
+    .show:hover {
+        color: #F47B56;
+    }
+    .lists {
+        gap: 7.2rem;
+        cursor: pointer;
+    }
+    .orangebox {
+        display: inline;
+        position: absolute;
+        margin-left: -90rem;
+        margin-top: 7rem;
+    }
+}
